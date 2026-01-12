@@ -27,14 +27,23 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ##Requirements
 
-- **Node.js** (modern LTS recommended)
-- **npm 11.6.2** (configured via `packageManager`)
+Angular CLI       : 21.0.5
+Angular           : 21.0.7
+Node.js           : 24.11.1
+Package Manager   : npm 11.6.2
+Operating System  : win32 x64
 
 ---
 
 ##Development Server
 
 To start a local development server:
+install packages
+```bash
+npm install
+```
+
+then
 
 ```bash
 npm start
