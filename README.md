@@ -35,6 +35,10 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 ##Development Server
 
 To start a local development server:
+install packages
+```bash
+npm install
+```
 
 ```bash
 npm start
