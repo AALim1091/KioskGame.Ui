@@ -40,6 +40,8 @@ install packages
 npm install
 ```
 
+then
+
 ```bash
 npm start
 ```
