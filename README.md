@@ -34,8 +34,8 @@ Package Manager   : npm 11.6.2
 Operating System  : win32 x64
 
 ---
-
 ##Development Server
+IDE: VS CODE
 
 To start a local development server:
 install packages
