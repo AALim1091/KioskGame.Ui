@@ -58,7 +58,7 @@ export class LoginScreenComponent extends UnsubscribeService  implements OnInit 
         }
 
         if (response.data.isSessionExpired || response.data.playsRemaining <= 0) {
-          this.router.navigate(['/session-expired', id, response.data.expirationReason]);
+          this.router.navigate(['/session-expired', id, 'Max daily plays used']);
           return;
         }
 
