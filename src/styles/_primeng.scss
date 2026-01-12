@@ -1,0 +1,44 @@
+
+
+//buttons
+.p-button.p-component {
+    font-size: 16px;
+    font-weight: 600;
+    width: auto;
+    padding: 4px 8px;
+    background-color: #2563eb;
+    border: 1px solid #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    line-height: 1.2;;
+}
+
+.p-button:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.p-button:active {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+.p-button:disabled {
+  background-color: #93c5fd;
+  border-color: #93c5fd;
+  color: #e5e7eb;
+}
+
+//input
+input.p-inputtext.p-component {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #d1d5db !important;
+}
+
+/* Focus ring in your blue */
+input.p-inputtext.p-component:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25) !important;
+  outline: none;
+}

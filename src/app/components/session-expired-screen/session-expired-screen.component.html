@@ -1,0 +1,20 @@
+<div class="background flex flex-column align-items-center justify-content-center h-screen p-4">
+  <p-card styleClass="w-full md:w-30rem">
+    <div class="flex flex-column align-items-center gap-3 text-center">
+      <h2 class="m-0">Session Expired</h2>
+       @if(id) {
+      <div class="text-sm opacity-70">
+        Player: <span class="font-bold">{{ id }}</span>
+      </div>
+      }
+      <p class="m-0">
+        {{ expirationReason }}
+      </p>
+      <p-button
+        label="Back to Start"
+        styleClass="w-full p-button-lg"
+        routerLink="/"
+      ></p-button>
+    </div>
+  </p-card>
+</div>

@@ -1,0 +1,19 @@
+<div class="flex flex-column align-items-center justify-content-center h-screen p-4 prize-background">
+  <p-card styleClass="w-full md:w-30rem">
+    <div class="flex flex-column align-items-center gap-3 text-center">
+      <h2 class="m-0">! Prize !</h2>
+      <div class="text-3xl font-bold">
+        {{ prizeText(result?.prize) }}
+      </div>
+      <div class="text-lg">
+        Plays Remaining:
+        <span class="font-bold">{{ result?.playsRemaining }}</span>
+      </div>
+      <p-button
+        label="Continue"
+        styleClass="w-full p-button-lg"
+        (onClick)="continue()"
+      ></p-button>
+    </div>
+  </p-card>
+</div>

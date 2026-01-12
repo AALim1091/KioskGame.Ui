@@ -1,0 +1,35 @@
+<div class="flex flex-column align-items-center justify-content-center h-screen p-4 gap-3  spin-background">
+  <p-card styleClass="w-full md:w-30rem">
+    <div class="flex flex-column align-items-center gap-3 text-center">
+      <h2 class="m-0">Spin to Win</h2>
+      <div class="text-xl">
+        Plays Remaining:
+        <span class="font-bold">{{ playsRemaining }}</span>
+      </div>
+      <p-button
+        label="SPIN"
+        styleClass="w-full p-button-lg"
+        [disabled]="spinning || playsRemaining <= 0"
+        (onClick)="spin()"
+      ></p-button>
+      @if(statusText) {
+        <div class="text-lg font-semibold">
+        {{ statusText }}
+      </div>
+      }
+      @if(error) {
+        <div class="text-red-500">
+        {{ error }}
+      </div>
+      }
+    </div>
+  </p-card>
+    @if(spinning) {
+      <div class="spinning-progress-overlay">
+    <p-progressSpinner
+      strokeWidth="4"
+      animationDuration=".75s">
+    </p-progressSpinner>
+  </div>
+    }
+</div>

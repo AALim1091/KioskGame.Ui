@@ -1,0 +1,20 @@
+<div class="login-background flex flex-column align-items-center justify-content-center h-screen p-4" >
+  <p-card  class="flex flex-column gap-3 m-3 align-items-center justify-content-center" styleClass="w-full md:w-30rem">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="flex flex-column align-items-center gap-3 text-center">
+      <div>
+        <h2>Enter Player ID</h2>
+      </div>
+      <div>
+        <input pInputText formControlName="id" placeholder="Player ID" />
+      </div>
+      <div>
+        <p-button type="submit">Login</p-button>
+      </div>
+      @if (error) {
+        <span style="color:red">{{ error }}</span>
+      }  
+    </div>
+  </form>
+</p-card>
+</div>
